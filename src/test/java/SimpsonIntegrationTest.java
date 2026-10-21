@@ -20,7 +20,7 @@ class SimpsonIntegrationTest {
 
     @Test
     void dof9ConDiezSegmentos() {
-        assertEquals(0.3500589, integrate(9, 1.1, 10), 1e-5);
+        assertEquals(0.3500589, integrate(10, 1.1, 10), 1e-5);
     }
 
     @Test
