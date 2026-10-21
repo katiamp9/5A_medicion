@@ -6,7 +6,7 @@ public class GammaFunction {
         if (intValue < 1) {
             throw new IllegalArgumentException("El valor debe ser >= 1");
         }
-        // lkajsd
+    
         double result = 1;
         for (int i = 2; i < intValue; i++) {
             result = result * i;

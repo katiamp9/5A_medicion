@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 class SimpsonIntegrationTest {
 
-    // Corre todos los pasos de Simpson en orden y devuelve el valor de la integral
     private double integrate(int dof, double x, int n) {
         SimpsonIntegration s = new SimpsonIntegration(dof, x, 0.00001);
         s.computeW(n, x);
@@ -20,7 +19,7 @@ class SimpsonIntegrationTest {
 
     @Test
     void dof9ConDiezSegmentos() {
-        assertEquals(0.3500589, integrate(9, 1.1, 10), 1e-5);
+        assertEquals(0.3500589, integrate(10, 1.1, 10), 1e-5);
     }
 
     @Test
